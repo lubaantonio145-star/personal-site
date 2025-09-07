@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> Luba | Porfolio</title>
 
+
+  
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/mylogo.png" />
 
@@ -19,33 +21,31 @@
   <meta name="application-name" content="Luba | Porfolio" />
   <meta name="apple-mobile-web-app-title" content="Luba | Portfolio" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  
+  
 
-  <!-- Smooth Scroll + Fixed Navbar Offset (no JS) -->
-  <style>
-    html { scroll-behavior: smooth; }
-    /* Prevent sections from being hidden behind the fixed-top navbar */
-    :root { scroll-padding-top: 90px; }          /* adjust to your navbar height */
-    [id] { scroll-margin-top: 90px; }            /* same offset for direct anchor targets */
-  </style>
 </head>
 <body>
   
   <canvas id="plexus-bg"></canvas>
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
     <div class="container">
       <a class="navbar-brand">
          <img src="img/mylogo.png" alt="Logo" width="70" height="70" />
         Luba</a>
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="modal" data-bs-target="#mobileNavModal">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="modal" data-bs-target="#mobileNavModal">
+  <span class="navbar-toggler-icon"></span>
+</button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
@@ -55,74 +55,75 @@
           <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Mobile Nav Modal Centered -->
-  <div class="modal fade" id="mobileNavModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
-    <div class="modal-dialog d-flex justify-content-center align-items-center d-lg-none" style="min-height: 100vh;">
-      <div class="modal-content mobile-nav-box text-center p-4">
-        <!-- Exit Button -->
-        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-        
-        <ul class="list-unstyled mt-4">
-          <!-- NOTE: use ./?nav=1#section so the page navigates (no custom JS needed) -->
-          <li><a href="./?nav=1#home" class="nav-link fs-4">Home</a></li>
-          <li><a href="./?nav=1#about" class="nav-link fs-4">About</a></li>
-          <li><a href="./?nav=1#skills" class="nav-link fs-4">Skills</a></li>
-          <li><a href="./?nav=1#experience" class="nav-link fs-4">Experience</a></li>
-          <li><a href="./?nav=1#certificates" class="nav-link fs-4">Certificates</a></li>
-          <li><a href="./?nav=1#projects" class="nav-link fs-4">Projects</a></li>
-          <li><a href="./?nav=1#contacts" class="nav-link fs-4">Contact</a></li>
-        </ul>
-      </div>
+ <!-- Mobile Nav Modal Centered -->
+<div class="modal fade" id="mobileNavModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+  <div class="modal-dialog d-flex justify-content-center align-items-center d-lg-none" style="min-height: 100vh;">
+    <div class="modal-content mobile-nav-box text-center p-4">
+      <!-- Exit Button -->
+      <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      
+      <ul class="list-unstyled mt-4">
+        <li><a href="#home" class="nav-link fs-4" data-bs-dismiss="modal">Home</a></li>
+        <li><a href="#about" class="nav-link fs-4" data-bs-dismiss="modal">About</a></li>
+         <li><a href="#skills" class="nav-link fs-4" data-bs-dismiss="modal">Skills</a></li>
+        <li><a href="#experience" class="nav-link fs-4" data-bs-dismiss="modal">Experience</a></li>
+         <li><a href="#certificates" class="nav-link fs-4" data-bs-dismiss="modal">Certificates</a></li>
+        <li><a href="#projects" class="nav-link fs-4" data-bs-dismiss="modal">Projects</a></li>
+        <li><a href="#contacts" class="nav-link fs-4" data-bs-dismiss="modal">Contact</a></li>
+      </ul>
     </div>
   </div>
-  
+</div>
+
+
   <section class="hero" id="home">
     <div class="container hero-content">
       <div class="hero-text">
         <h1>HEY! I'M ANTONIO</h1>
-        <h2>I'M A PROGRAMMER</h2>
+    <h2>I'M A PROGRAMMER</h2>
 
         <p>Aspiring Software and Web Developer focused on designing and developing modern websites and systems with intuitive interfaces and clean, efficient functionality.</p>
         <div class="hero-buttons">
           <a href="mailto:antonioluba285@gmail.com" class="btn me-2">Get in Touch</a>
-          <!-- Contact Links -->
-          <div class="d-flex justify-content-start justify-content-md-start gap-3 flex-wrap mt-3 ">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=antonioluba285@gmail.com" class="contact-link" target="_blank">
-              <i class="bi bi-envelope-fill"></i>
-            </a>
-            <a href="https://github.com/lubashft18" class="contact-link" target="_blank">
-              <i class="bi bi-github"></i> 
-            </a>
-            <a href="https://www.facebook.com/antonio.luba.18" class="contact-link" target="_blank">
-              <i class="bi bi-facebook"></i>
-            </a>
-          </div>
+           <!-- Contact Links -->
+      <div class="d-flex justify-content-start justify-content-md-start gap-3 flex-wrap mt-3 ">
+       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=antonioluba285@gmail.com" class="contact-link" target="_blank">
+        <i class="bi bi-envelope-fill"></i>
+        </a>
+        <a href="https://github.com/lubashft18" class="contact-link" target="_blank">
+          <i class="bi bi-github"></i> 
+        </a>
+        <a href="https://www.facebook.com/antonio.luba.18" class="contact-link" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+      </div>
         </div>
       </div>
       
-      <div class="hero-image">
-        <svg class="bg-circles" width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="150" cy="150" r="140" stroke="#00f2fe" stroke-width="0.5" />
-          <circle cx="150" cy="150" r="120" stroke="#00f2fe" stroke-width="0.5" />
-          <circle cx="150" cy="150" r="100" stroke="#00f2fe" stroke-width="0.5" />
-          <circle cx="150" cy="150" r="80" stroke="#00f2fe" stroke-width="0.5" />
-          <circle cx="150" cy="150" r="60" stroke="#00f2fe" stroke-width="0.5" />
-        </svg>
-        <img src="img/cfab1ea2-1df5-4ae5-8878-31f5dccd85a8.png" alt="Antonio's Portrait">
-      </div>
-    </div>
-  </section>
+    <div class="hero-image">
+  <svg class="bg-circles" width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="150" cy="150" r="140" stroke="#00f2fe" stroke-width="0.5" />
+    <circle cx="150" cy="150" r="120" stroke="#00f2fe" stroke-width="0.5" />
+    <circle cx="150" cy="150" r="100" stroke="#00f2fe" stroke-width="0.5" />
+    <circle cx="150" cy="150" r="80" stroke="#00f2fe" stroke-width="0.5" />
+    <circle cx="150" cy="150" r="60" stroke="#00f2fe" stroke-width="0.5" />
+  </svg>
+  <img src="img/cfab1ea2-1df5-4ae5-8878-31f5dccd85a8.png" alt="Antonio's Portrait">
+</div>
+</div>
+</section>
 
-  <div class="container1">
-    <h2>About Me</h2>
+ <div class="container1">
+<h2>About Me</h2>
     <section class="about-section" id="about">
+      
       <div class="about-img">
         <img src="img/portrait.jpg" alt="Portrait">
       </div>
@@ -155,267 +156,330 @@
   </div>
 
   <div class="experience">
-    <h2 >Experience</h2>
+<h2 >Experience</h2>
 
-    <section class="experience-section" id="experience">
-      <div class="experience-card">
-        <h3>Dr. Emilio B. Espinosa Sr. Memorial State College of Agriculture and Technology</h3>
-        <p class="date-range">August 2023 - Present</p>
-        <p class="position-title">Junior Programmer</p>
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Donec vehicula cursus ante, vitae luctus justo hendrerit non.</li>
-          <li>Praesent aliquam tellus nec libero volutpat, nec scelerisque nulla semper.</li>
-        </ul>
-      </div>
-
-      <div class="experience-card">
-        <h3>Dr. Emilio B. Espinosa Sr. Memorial State College of Agriculture and Technology</h3>
-        <p class="date-range">August 2023 - Present</p>
-        <p class="position-title">Junior Web Developer</p>
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Donec vehicula cursus ante, vitae luctus justo hendrerit non.</li>
-          <li>Praesent aliquam tellus nec libero volutpat, nec scelerisque nulla semper.</li>
-        </ul>
-      </div>
-    </section>
+<section class="experience-section" id="experience">
+  
+  <div class="experience-card">
+    <h3>Dr. Emilio B. Espinosa Sr. Memorial State College of Agriculture and Technology</h3>
+    <p class="date-range">August 2023 - Present</p>
+    <p class="position-title">Junior Programmer</p>
+    <ul>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+      <li>Donec vehicula cursus ante, vitae luctus justo hendrerit non.</li>
+      <li>Praesent aliquam tellus nec libero volutpat, nec scelerisque nulla semper.</li>
+    </ul>
   </div>
 
-  <section class="resume" id="resume">
-    <div class="container">
-      <h2>Resume</h2>
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="img/resume.png" alt="Project 1">
-            <h4>Resume</h4>
-            <div class="overlay">
-              <div class="overlay-text">
-                <h5> My Resume</h5>
-                <p>“My resume reflects a motivated and hardworking individual who is eager to learn, adapt, and contribute to success through dedication and continuous growth"</p>
-                <a href="pdf/Resume.pdf" class="view-link" target="_blank">View Resume</a>
-              </div>
+  <div class="experience-card">
+    <h3>Dr. Emilio B. Espinosa Sr. Memorial State College of Agriculture and Technology</h3>
+    <p class="date-range">August 2023 - Present</p>
+    <p class="position-title">Junior Web Developer</p>
+    <ul>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+      <li>Donec vehicula cursus ante, vitae luctus justo hendrerit non.</li>
+      <li>Praesent aliquam tellus nec libero volutpat, nec scelerisque nulla semper.</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+
+<section class="resume" id="resume">
+  <div class="container">
+    <h2>Resume</h2>
+    <div class="row g-4 justify-content-center"> <!-- Add justify-content-center here -->
+      <!-- Project 1 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="img/resume.png" alt="Project 1">
+          <h4>Resume</h4>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h5> My Resume</h5>
+              <p>“My resume reflects a motivated and hardworking individual who is eager to learn, adapt, and contribute to success through dedication and continuous growth"</p>
+              <a href="pdf/Resume.pdf" class="view-link" target="_blank">View Resume</a>
             </div>
           </div>
-        </div>
-      </div>  
-    </div>
-  </section>
-
-  <div class="container-skills">
-    <h2>Skills</h2>
-    <section class="skills-section" id="skills">
-      <div class="skills-content1">
-        <h3>Programming Languages</h3>
-        <div class="logo-row">
-          <div class="prog-logo"><img src="img/cpp_logo.png" alt=""></div>
-          <div class="prog-logo"><img src="img/64px-Python-logo-notext.svg.png" alt=""></div>
-          <div class="prog-logo"><img src="img/new-php-logo.png" alt=""></div>
-          <div class="prog-logo"><img src="img/includes-mysql-167x86.png" alt=""></div>
-          <div class="prog-logo"><img src="img/512px-HTML5_logo_and_wordmark.svg.png" alt=""></div>
-          <div class="prog-logo"><img src="img/256px-CSS3_logo_and_wordmark.svg.png" alt=""></div>
-          <div class="prog-logo"><img src="img/128px-Javascript_badge.svg.png" alt=""></div>
         </div>
       </div>
-    </section>
-  </div>
 
-  <section class="certificates" id="certificates">
-    <div class="container">
-      <h2>Certificates & Awards</h2>
-      <h3 class="cisco"> CISCO NetAcad Certification</h3>
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="img/html_cert.png" alt="Project 1">
-            <h4>HTML Essentials</h4>
-            <div class="overlay">
-              <div class="overlay-text">
-                <h5>HTML Essentials</h5>
-                <p>Completed Cisco Networking Academy’s HTML Essentials course on March 18, 2025, gaining foundational skills in HTML structure, semantic markup, and website content organization.</p>
-                <a href="pdf/_certificate_antonioluba285-gmail-com_64e236ca-3935-460e-9f0d-c066538326e7 (1).pdf" class="view-link" target="_blank">View Certificate</a>
-              </div>
-            </div>
-          </div>
-        </div>
+  
 
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="img/css_cert.png" alt="Project 2">
-            <h4>CSS Essentials</h4>
-            <div class="overlay">
-              <div class="overlay-text">
-                <h5>CSS Essentials</h5>
-                <p>Completed Cisco Networking Academy’s CSS Essentials on April 22 2025, covering responsive design, Flexbox, and Grid layouts.</p>
-                <a href="pdf/_certificate_antonioluba285-gmail-com_aa55d699-17e9-437e-aedb-be53c80042c0.pdf" class="view-link" target="_blank">View Certificate</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
+</section>
+
+
+<div class="container-skills">
+  <h2>Skills</h2>
+  <section class="skills-section" id="skills">
+
+    <div class="skills-content1">
+      <h3>Programming Languages</h3>
+      
+      <div class="logo-row">
+        <div class="prog-logo"><img src="img/cpp_logo.png" alt=""></div>
+        <div class="prog-logo"><img src="img/64px-Python-logo-notext.svg.png" alt=""></div>
+        <div class="prog-logo"><img src="img/new-php-logo.png" alt=""></div>
+        <div class="prog-logo"><img src="img/includes-mysql-167x86.png" alt=""></div>
+        <div class="prog-logo"><img src="img/512px-HTML5_logo_and_wordmark.svg.png" alt=""></div>
+        <div class="prog-logo"><img src="img/256px-CSS3_logo_and_wordmark.svg.png" alt=""></div>
+        <div class="prog-logo"><img src="img/128px-Javascript_badge.svg.png" alt=""></div>
+      </div>
     </div>
   </section>
+</div>
 
-  <section class="hackerrank">
-    <div class="container">
-      <h3>HackerRank Certification</h3>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="img/python_cert.png" alt="Project 3">
-            <h4>Python Basic</h4>
-            <div class="overlay">
-              <div class="overlay-text">
-                <h5>Python Basic</h5>
-                <p>Earned HackerRank’s Python (Basic) Certification on May 6, 2025, demonstrating core Python programming skills.</p>
-                <a href="pdf/python_basic certificate.pdf" class="view-link" target="_blank">View Certificate</a>
-              </div>
+
+<section class="certificates" id="certificates">
+  <div class="container">
+    <h2>Certificates & Awards</h2>
+    <h3 class="cisco"> CISCO NetAcad Certification</h3>
+    <div class="row g-4 justify-content-center"> <!-- Add justify-content-center here -->
+      <!-- Project 1 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="img/html_cert.png" alt="Project 1">
+          <h4>HTML Essentials</h4>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h5>HTML Essentials</h5>
+              <p>Completed Cisco Networking Academy’s HTML Essentials course on March 18, 2025, gaining foundational skills in HTML structure, semantic markup, and website content organization.</p>
+              <a href="pdf/_certificate_antonioluba285-gmail-com_64e236ca-3935-460e-9f0d-c066538326e7 (1).pdf" class="view-link" target="_blank">View Certificate</a>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="img/problemsolve_cert.png" alt="Project 4">
-            <h4>Problem Solving </h4>
-            <div class="overlay">
-              <div class="overlay-text">
-                <h5>Problem Solving</h5>
-                <p>Achieved HackerRank’s Problem Solving (Basic) Certification on May 5, 2025, validating fundamental algorithmic and logical reasoning skills.</p>
-                <a href="pdf/problem_solving_basic certificate.pdf" class="view-link" target="_blank">View Certificate</a>
-              </div>
+      <!-- Project 2 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="img/css_cert.png" alt="Project 2">
+          <h4>CSS Essentials</h4>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h5>CSS Essentials</h5>
+              <p>Completed Cisco Networking Academy’s CSS Essentials on April 22 2025, covering responsive design, Flexbox, and Grid layouts.</p>
+              <a href="pdf/_certificate_antonioluba285-gmail-com_aa55d699-17e9-437e-aedb-be53c80042c0.pdf" class="view-link" target="_blank">View Certificate</a>
             </div>
           </div>
         </div>
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</section>
 
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="img/cssbasic_cert.png" alt="Project 5">
-            <h4>CSS Basic </h4>
-            <div class="overlay">
-              <div class="overlay-text">
-                <h5>CSS Basic</h5>
-                <p>Completed CSS Basic Certification on May 5, 2025, demonstrating essential web styling and layout skills.</p>
-                <a href="pdf/css certificate.pdf" class="view-link" target="_blank">View Certificate</a>
-              </div>
+
+<section class="hackerrank">
+  <div class="container">
+    <h3>HackerRank Certification</h3>
+    <div class="row g-4">
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="img/python_cert.png" alt="Project 3">
+          <h4>Python Basic</h4>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h5>Python Basic</h5>
+              <p>Earned HackerRank’s Python (Basic) Certification on May 6, 2025, demonstrating core Python programming skills.</p>
+              <a href="pdf/python_basic certificate.pdf" class="view-link" target="_blank">View Certificate</a>
             </div>
           </div>
         </div>
-      </div> 
-    </div>
-  </section>
+      </div>
 
-  <section class="projects" id="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="img/SNHS logo.png" alt="Project 1">
+      <!-- Project 4 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="img/problemsolve_cert.png" alt="Project 4">
+          <h4>Problem Solving </h4>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h5>Problem Solving</h5>
+              <p>Achieved HackerRank’s Problem Solving (Basic) Certification on May 5, 2025, validating fundamental algorithmic and logical reasoning skills.</p>
+              <a href="pdf/problem_solving_basic certificate.pdf" class="view-link" target="_blank">View Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="img/cssbasic_cert.png" alt="Project 5">
+          <h4>CSS Basic </h4>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h5>CSS Basic</h5>
+              <p>Completed CSS Basic Certification on May 5, 2025, demonstrating essential web styling and layout skills.</p>
+              <a href="pdf/css certificate.pdf" class="view-link" target="_blank">View Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</section>
+
+ <section class="projects" id="projects">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="img/SNHS logo.png" alt="Project 1">
             <h4>Enrollment System</h4>
-            <div class="overlay">
-              <div class="overlay-text">
-                <h5>Enrollment System</h5>
-                <p>Full-featured student enrollment system with database, file upload, and admin panel.</p>
-                <a href="https://simawanhsenrollment.42web.io" class="view-link" target="_blank">View Project</a>
-              </div>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h5>Enrollment System</h5>
+              <p>Full-featured student enrollment system with database, file upload, and admin panel.</p>
+              <a href="https://simawanhsenrollment.42web.io" class="view-link" target="_blank">View Project</a>
+            
             </div>
           </div>
         </div>
-
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="img/book.png" alt="Project 2">
-            <h4>Reading Hub</h4>
-            <div class="overlay">
-              <div class="overlay-text">
-                <h5>SNHS Reading Hub</h5>
-                <p>A modern, student-friendly reading platform with organized content, responsive design, and fun, inspiring reads..</p>
-                <a href="https://simawanhsreadinghub.free.nf" class="view-link" target="_blank">View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="img/logo.png" alt="Project 3">
-            <h4>Coffee Website</h4>
-            <div class="overlay">
-              <div class="overlay-text">
-                <h5>Cafe'Han</h5>
-                <p>A modern and visually rich coffee website featuring responsive design, smooth navigation, and a warm café-inspired user experience.</p>
-                <a href="https://coffeewebsite.github.io/cafehan" class="view-link" target="_blank">View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="img/book.png" alt="Project 2">
+          <h4>Reading Hub</h4>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h5>SNHS Reading Hub</h5>
+              <p>A modern, student-friendly reading platform with organized content, responsive design, and fun, inspiring reads..</p>
+              <a href="https://simawanhsreadinghub.free.nf" class="view-link" target="_blank">View Project</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="img/logo.png" alt="Project 3">
+          <h4>Coffee Website</h4>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h5>Cafe'Han</h5>
+              <p>A modern and visually rich coffee website featuring responsive design, smooth navigation, and a warm café-inspired user experience.</p>
+              <a href="https://coffeewebsite.github.io/cafehan" class="view-link" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
-
-  <div class="contacts-section">
-    <h2>Contacts</h2>
-    <section class="contacts" id="contacts">
-      <div class="contact-container">
-        <div class="contact-box row g-4">
-
-          <!-- Left Section -->
-          <div class="col-md-6 d-flex flex-column justify-content-center">
-            <h2 class="mb-3">Contact Me</h2>
-            <p>Looking for a website? Let’s build it together.</p>
-
-            <div class="contact-info mt-4">
-              <p><i class="bi bi-geo-alt-fill"></i> Address: Masbate PH</p>
-              <p><i class="bi bi-envelope-fill"></i> Email: antonioluba285@gmail.com</p>
-              <p><i class="bi bi-telephone-fill"></i> Phone: (+63) 985-3165-737</p>
-            </div>
-          </div>
-
-          <!-- Right Section (Form) -->
-          <div class="col-md-6">
-            <form id="contact-form">
-              <div class="mb-4">
-                <label class="name">Name</label>
-                <input type="text" class="form-control" id="name" name="from_name" placeholder="Enter your full name" required>
-              </div>
-              <div class="mb-4">
-                <label class="email">Email</label>
-                <input type="email" class="form-control" id="email" name="reply_to" placeholder="example@gmail.com" required>
-              </div>
-              <div class="mb-4">
-                <label class="message">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message" required></textarea>
-              </div>
-              <button type="submit" class="send-btn">Send Messages</button>
-              <p class="message" id="formMessage"></p>
-
-              <div class="social-icons mt-4 ">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=antonioluba285@gmail.com" class="icon" style="text-decoration: none;" target="_blank">
-                  <i class="bi bi-envelope-fill"></i>
-                </a>
-                <a href="https://github.com/lubashft18"  target="_blank" style="text-decoration: none;">
-                  <i class="bi bi-github"> </i> 
-                </a>
-                <a href="https://www.facebook.com/antonio.luba.18"  target="_blank">
-                  <i class="bi bi-facebook "> </i> 
-                </a>
-              </div>
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </section>
   </div>
+</section>
+
+
+<div class="contacts-section">
+  <h2>Contacts</h2>
+<section class="contacts" id="contacts">
+<div class="contact-container">
+  <div class="contact-box row g-4">
+
+    <!-- Left Section -->
+    <div class="col-md-6 d-flex flex-column justify-content-center">
+      <h2 class="mb-3">Contact Me</h2>
+      <p>Looking for a website? Let’s build it together.</p>
+
+      <div class="contact-info mt-4">
+        <p><i class="bi bi-geo-alt-fill"></i> Address: Masbate PH</p>
+        <p><i class="bi bi-envelope-fill"></i> Email: antonioluba285@gmail.com</p>
+        <p><i class="bi bi-telephone-fill"></i> Phone: (+63) 985-3165-737</p>
+      </div>
+
+     
+    </div>
+
+    <!-- Right Section (Form) -->
+    <div class="col-md-6">
+      <form id="contact-form">
+        <div class="mb-4">
+          <label class="name">Name</label>
+          <input type="text" class="form-control" id="name" name="from_name" placeholder="Enter your full name" required>
+        </div>
+        <div class="mb-4">
+          <label class="email">Email</label>
+         <input type="email" class="form-control" id="email" name="reply_to" placeholder="example@gmail.com" required>
+        </div>
+        <div class="mb-4">
+          <label class="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="send-btn">Send Messages</button>
+          <p class="message" id="formMessage"></p>
+
+        <div class="social-icons mt-4 ">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=antonioluba285@gmail.com" class="icon" style="text-decoration: none;" target="_blank">
+        <i class="bi bi-envelope-fill"></i>
+        </a>
+        <a href="https://github.com/lubashft18"  target="_blank" style="text-decoration: none;">
+          <i class="bi bi-github"> </i> 
+        </a>
+        <a href="https://www.facebook.com/antonio.luba.18"  target="_blank">
+          <i class="bi bi-facebook "> </i> 
+        </a>
+        </div>
+
+        
+      </form>
+    </div>
+
+  </div>
+</div>
+</div>
+
+</section>
 
   <footer>
     &copy; 2025 Luba. All rights reserved.
   </footer>
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+ document.addEventListener('DOMContentLoaded', function () {
+  const closeBtn = document.querySelector('#mobileNavModal .btn-close');
+  const modalElement = document.getElementById('mobileNavModal');
+  const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
+
+  closeBtn.addEventListener('click', function () {
+    modalInstance.hide();
+  });
+});
+
+</script>
+
+
+<script>
+document.querySelectorAll('#mobileNavModal .nav-link').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); // prevent default anchor behavior
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    // Hide the modal first
+    const modalElement = document.getElementById('mobileNavModal');
+    const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
+    modalInstance.hide();
+
+    // Wait for modal to hide, then scroll to the section
+    modalElement.addEventListener('hidden.bs.modal', function onHide() {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+      modalElement.removeEventListener('hidden.bs.modal', onHide);
+    });
+  });
+});
+</script>
+
+    
 
 </body>
 </html>
