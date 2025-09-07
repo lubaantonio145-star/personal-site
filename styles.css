@@ -2,14 +2,14 @@
 
   body {
   
-  padding-top: 40px; 
+  padding-top: 40px; /* ✅ This line is essential */
   font-family: 'VT323', monospace;
   background: #0f172a;
   color: #f8fafc;
 
 }
   html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth; /* enables smooth scrolling everywhere */
   }
 
   #plexus-bg {
