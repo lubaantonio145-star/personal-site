@@ -2,12 +2,15 @@
 
   body {
   
-  padding-top: 40px; /* 
+  padding-top: 40px; 
   font-family: 'VT323', monospace;
   background: #0f172a;
   color: #f8fafc;
 
 }
+  html {
+    scroll-behavior: smooth; 
+  }
 
   #plexus-bg {
     position: fixed;
@@ -931,5 +934,4 @@ body h2{
     justify-content: center;
     text-align: center;
     color: #00f2fe;
-
 }
