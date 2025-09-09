@@ -2,14 +2,14 @@
 
   body {
   
-  padding-top: 40px; 
+  padding-top: 40px; /* ✅ This line is essential */
   font-family: 'VT323', monospace;
   background: #0f172a;
   color: #f8fafc;
 
 }
   html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth; /* enables smooth scrolling everywhere */
   }
 
   #plexus-bg {
@@ -934,5 +934,20 @@ body h2{
     justify-content: center;
     text-align: center;
     color: #00f2fe;
+}
 
+.navbar-nav .nav-link.active::after {
+  width: 0;
+}
+
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+
+.navbar-nav .nav-link.active:focus::after,
+.navbar-nav .nav-link.active:visited::after,
+.navbar-nav .nav-link.active:active::after {
+  width: 100%;
 }
